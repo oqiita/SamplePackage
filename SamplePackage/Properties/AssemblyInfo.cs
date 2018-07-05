@@ -17,7 +17,7 @@ using Artech.Architecture.Common.Packages;
 
 // The following attributes are declarations related to this assembly
 // as a GeneXus Package
-[assembly: PackageAttribute(typeof(% BASE_NAMESPACE %.Package))]
+[assembly: PackageAttribute(typeof(Oqiita.Packages.SamplePackage.Package))]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -25,7 +25,7 @@ using Artech.Architecture.Common.Packages;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("71fccfc7-23a9-4c2c-b46d-1314d8b0801a")]
+[assembly: Guid("d7722621-b5a7-4a3e-84d4-b2215aa9f9a6")]
 
 // Version information for an assembly consists of the following four values:
 //

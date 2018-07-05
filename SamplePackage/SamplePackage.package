@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Package xmlns='http://schemas.genexus.com/addin/v1.0'
+			id='92706303-332a-4e7d-8cd4-3d19ca092c14'
+			name='SamplePackage'>
+
+  <!--Command-->
+  <Commands>
+    <CommandDefinition id ="TestCommand" />
+  </Commands>
+
+  <!-- Menu -->
+  <Menus>
+    <Menu type='menubar'>
+      <Popup name="SamplePackage">
+        <Command refid='TestCommand'/>
+      </Popup>
+    </Menu>
+  </Menus>
+
+</Package>

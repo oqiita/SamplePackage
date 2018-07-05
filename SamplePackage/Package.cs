@@ -1,25 +1,28 @@
-using Artech.Architecture.Common.Packages;
 using Artech.Architecture.Common.Services;
+using Artech.Architecture.UI.Framework.Packages;
+using System;
 using System.Runtime.InteropServices;
 
 namespace Oqiita.Packages.SamplePackage
 {
-	[Guid("a4b8938e-c41b-4f49-9e5e-0773df6598fc")]
-public class Package : AbstractPackage	{
-    public override string Name
+    [Guid("92706303-332a-4e7d-8cd4-3d19ca092c14")]
+    public class Package : AbstractPackageUI
     {
-        get { return "SamplePackage"; }
-    }
 
-    public override void Initialize(IGxServiceProvider services)
-    {
-        base.Initialize(services);
-% ADD_OBJECT_BEGIN %
-            LoadCategories();
-        LoadObjectTypes();% ADD_OBJECT_END %
-% ADD_PART_BEGIN % LoadPartTypes();
-        LoadEditors();% ADD_PART_END %
+        // Add Code Oqiita
+        public static Guid guid = typeof(Package).GUID;
 
+        public override string Name
+        {
+            get { return "SamplePackage"; }
         }
-	}
+
+        public override void Initialize(IGxServiceProvider services)
+        {
+            base.Initialize(services);
+
+            // ƒRƒ}ƒ“ƒh‚Ì’Ç‰Á
+            AddCommandTarget(new CommandManager());
+        }
+    }
 }
